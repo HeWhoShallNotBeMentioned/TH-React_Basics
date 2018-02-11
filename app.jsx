@@ -30,4 +30,4 @@ Application.defaultProps = {
   title: "Scoreboard",
 }
 
-ReactDOM.render(<Application title="My Scoreboard"/>, document.getElementById('container'));
+ReactDOM.render(<Application />, document.getElementById('container'));
