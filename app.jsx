@@ -70,6 +70,12 @@ const Application = React.createClass({
     })).isRequired,
   },
 
+  getDefaultProps: function(){
+    return {
+      title: "Scoreboard",
+    }
+  },
+
   render: function(){
     return (
       <div className="scoreboard">
@@ -84,9 +90,5 @@ const Application = React.createClass({
   }
 })
 
-
-Application.defaultProps = {
-  title: "Scoreboard",
-}
 
 ReactDOM.render(<Application players = {PLAYERS}/>, document.getElementById('container'));
